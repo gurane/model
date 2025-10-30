@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Tool</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Page title -->
+    <h1>Prompt Tool</h1>
+    <!-- Category buttons mimic the navigation from the original site -->
+    <div class="categories">
+      <button class="cat-btn active" data-category="model">Model</button>
+      <button class="cat-btn" data-category="wanita">Wanita</button>
+      <button class="cat-btn" data-category="pria">Pria</button>
+      <button class="cat-btn" data-category="manekin">Manekin</button>
+      <!-- New "Campur" category button to display all prompts -->
+      <button class="cat-btn" data-category="campur">Campur</button>
+      <button class="cat-btn" data-category="bg">Background</button>
+    </div>
+    <!-- Container for prompt/result cards -->
+    <div class="cards">
+      <!-- Card for the "Model" category -->
+      <div class="card" data-category="model">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A full-body portrait of a young, white Asian man, posing model-like with a friendly, toothy smile. He is wearing a plain gray t-shirt, beige trousers, and casual shoes. He is standing facing forward.
+The background is a bright, plain white. The lighting is soft and natural, coming from a window just outside the frame, creating a clean, comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="no.webp" alt="Reference image for model outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="2.webp" alt="Result image for model">
+        </div>
+      </div>
+
+      <div class="card" data-category="model">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A full-body portrait of a beautiful young Asian woman with fair skin poses cheerfully with a friendly smile, showing her teeth. She wears a cream-colored hijab, a long-sleeved gray knit shirt, and a cream-colored pleated skirt. She stands facing forward. 
+The background is a plain, bright white. The lighting is soft and natural, coming from a window just outside the frame, creating a clean and comfortable indoor atmosphere. Style: Ultra-realistic, fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="no1.webp" alt="Reference image for model outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="1.webp" alt="Result image for model">
+        </div>
+      </div>
+      <!-- Card for the "Wanita" category -->
+      <div class="card" data-category="wanita">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A young Asian female model wearing a hijab stands. She is wearing the exact same outfit as the one featured in the uploaded photo (the colors and details remain the same). The model poses casually, her face facing the camera with a sweet smile.
+The background includes a round beige and gray patterned rug, an aesthetically pleasing pastel blue wall, a black metal clothes rack with several women's clothes hanging on it, and a small white flower pot. The lighting is soft and natural, coming from a window just outside the frame, creating a clean and comfortable indoor atmosphere. Style: Ultra-realistic, fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="a1.webp" alt="Reference image for woman outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="a2.webp" alt="Result image for woman">
+        </div>
+      </div>
+
+      <div class="card" data-category="wanita">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A young Asian female model is wearing a booth. She is wearing the exact outfit shown in the uploaded photo (the colors and details remain the same).
+The background is an aesthetic pastel sage green wall, behind which is a white bookshelf and a minimalist bedroom lamp. The lighting is soft and natural, coming from a window just outside the frame, creating a clean and comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="b1.webp" alt="Reference image for woman outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="b2.webp" alt="Result image for woman">
+        </div>
+      </div>
+
+      <div class="card" data-category="wanita">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A young Asian woman wearing a stylish hijab and the outfit pictured in the uploaded photo (do not alter the colors or details of the outfit). She stands indoors, seemingly in front of a mirror, taking a selfie with her iPhone 15. The model's pose is relaxed, with one hand holding the phone in front of her face and the other loosely at her side.
+The background is an aesthetic closet and a clean, neutral wall. The lighting is soft and natural, coming from a window just outside the frame, creating a clean, comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="c1.webp" alt="Reference image for woman outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="c2.webp" alt="Result image for woman">
+        </div>
+      </div>
+
+      <!-- Card for the "Pria" category -->
+      <div class="card" data-category="pria">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A young Asian male model stands. He is wearing the exact same outfit as the one shown in the uploaded photo (the colors and details remain the same). The model poses casually, his face facing the camera with a sweet smile.
+The background is an aesthetic pastel gray wall, with minimalist shelves behind it. The lighting is soft and natural, coming from a window just outside the frame, creating a clean and comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="d1.webp" alt="Reference image for batik outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="d2.webp" alt="Result image for batik outfit">
+        </div>
+      </div>
+
+      <div class="card" data-category="pria">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A young Asian male model stands. He is wearing the exact same outfit as the one featured in the uploaded photo (the colors and details remain the same). The model poses casually, his face facing the camera with a sweet smile.
+The background is a professional studio. The lighting is soft and natural, creating a clean and comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="e1.webp" alt="Reference image for batik outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="e2.webp" alt="Result image for batik outfit">
+        </div>
+      </div>
+
+      <div class="card" data-category="pria">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A male model stands facing forward. He is wearing the exact same pants as those in the uploaded photo (the colors and details remain the same). He also wears black outdoor shoes.
+The background is a room with textured gray walls. The lighting is soft and natural. Style: Ultra-realistic fashion lifestyle photography, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="f1.webp" alt="Reference image for batik outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="f2.webp" alt="Result image for batik outfit">
+        </div>
+      </div>
+
+      <!-- Card for the "Manekin" category -->
+      <div class="card" data-category="manekin">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>The mannequin booth photo shows how the uploaded product (color and details remain the same) is mounted on a white mannequin.
+The backdrop is a light gray textured wall. Next to it is a small white table filled with books and a green potted plant. Soft natural lighting from a window just outside the frame creates a clean and comfortable indoor atmosphere. Style: Ultra-realistic fashion lifestyle photography, studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="g1.webp" alt="Reference image for mannequin outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="g2.webp" alt="Result image for mannequin">
+        </div>
+      </div>
+
+      <div class="card" data-category="manekin">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A studio shot featuring a mannequin wearing a hijab without clothing. The color and details of the hijab are preserved. The mannequin is placed on a white mannequin stand.
+The background is a pastel-colored textured wall, a white metal clothes rack with several hijabs hanging on it. Soft natural lighting from the window just outside the frame creates a clean and comfortable indoor atmosphere. Studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="h1.webp" alt="Reference image for mannequin outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="h2.webp" alt="Result image for mannequin">
+        </div>
+      </div>
+
+      <div class="card" data-category="manekin">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>A close-up studio shot of a mannequin wearing a hat (the mannequin is faceless, without hands, and clothing). The colors and details of the hat are preserved. The mannequin is placed on a white mannequin stand.
+The background is a textured, pastel-colored wall. Soft natural lighting from a window just outside the frame creates a clean, comfortable indoor atmosphere. Studio lighting, soft shadows, 4K resolution.</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="i1.webp" alt="Reference image for mannequin outfit">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="i2.webp" alt="Result image for mannequin">
+        </div>
+      </div>
+
+      <!-- Card for the "Campur" category (a mixed or unisex example) -->
+      <div class="card" data-category="campur">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>woman’s hand holding the uploaded product above a light wooden table, background with green indoor plants, sunlight from window, natural soft shadows, cozy minimalist aesthetic, neutral tones, product in focus, aesthetic home studio vibe, casual lifestyle review scene</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="t1.jpeg" alt="Reference image for mixed outfits">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="t1a.jpeg" alt="Result image for mixed outfits">
+        </div>
+      </div>
+
+      <div class="card" data-category="campur">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>soft feminine hands displaying the uploaded product on a white desk near a green plant, sunlight from side window, minimal background with subtle decor, neutral indoor studio tone, cozy home-review aesthetic, clean composition with product focus</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="j.webp" alt="Reference image for mixed outfits">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="j1.jpeg" alt="Result image for mixed outfits">
+        </div>
+      </div>
+
+<div class="card" data-category="campur">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>stylish female hands lifting or adjusting the uploaded product on a neat white table, soft pink accents in the background, indoor studio with vase of flowers and cute decor, warm natural lighting, product-focused composition, cozy feminine review setup, elegant clean TikTok aesthetic</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="k1.webp" alt="Reference image for mixed outfits">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="k.jpeg" alt="Result image for mixed outfits">
+        </div>
+      </div>
+
+      <div class="card" data-category="campur">
+        <div class="left-section">
+          <div class="prompt-header">
+            <h2>Prompt</h2>
+            <button class="copy-btn">Copy</button>
+          </div>
+          <textarea class="prompt-text" readonly>Indonesian woman with hijab sitting behind a wooden table, holding or pointing at the uploaded product, bright natural daylight from window, plants and pastel decor in background, medium camera distance, calm and natural aesthetic, lifestyle product review photo</textarea>
+          <div class="reference">
+            <h3>Image Reference</h3>
+            <img src="l1.webp" alt="Reference image for mixed outfits">
+          </div>
+        </div>
+        <div class="right-section">
+          <h2>Result</h2>
+          <img src="l.jpeg" alt="Result image for mixed outfits">
+        </div>
+      </div>
+
+      <!-- Card for the "Pria" category -->
+   <!-- FASHION BACKGROUND (dengan model) -->
+<div class="card" data-category="bg">
+  <div class="left-section">
+    <div class="prompt-header">
+      <h2>Fashion Background (Dengan Model)</h2>
+    </div>
+
+    <div><textarea class="prompt-text" readonly rows="2">Soft pastel wall (beige, cream, or gray tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Minimalist indoor studio with daylight from window</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Neutral textured plaster wall with soft shadows</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Cozy living room with plants and neutral sofa</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">White curtain backdrop with warm sunlight glow</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Boutique-style room with mirror and clothing rack</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Bedroom with linen bedsheet aesthetic and natural lighting</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Modern wooden interior with subtle decor and sunlight</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Artistic corner wall with framed prints and shadows</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Gradient pastel panels studio setup (soft aesthetic)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Industrial loft (brick wall, window light, moody tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Japandi-inspired interior (wood texture and warm tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Soft daylight corner with plant shadows on wall</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Editorial monochrome wall with clean fashion lighting</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Minimal concrete wall with directional sunlight</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Urban street with blurred background (bokeh style)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Green garden background with soft afternoon sunlight</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Rooftop scene with blue sky or golden sunset light</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Café terrace with neutral decor and warm ambiance</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Beach or boardwalk background during golden hour</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Pathway with trees and soft light shadows on ground</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Alley with pastel-colored wall and urban mood</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Flower garden with vibrant color and soft light</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Modern architecture background (clean geometry)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Outdoor white wall with morning sunlight shadow</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+
+  </div>
+</div>
+
+<!-- NON-FASHION BACKGROUND (tanpa model) -->
+<div class="card" data-category="bg">
+  <div class="left-section">
+    <div class="prompt-header">
+      <h2>Non-Fashion Background (Tanpa Model)</h2>
+    </div>
+
+    <div><textarea class="prompt-text" readonly rows="2">White seamless backdrop (clean e-commerce look)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Soft pastel background (mint, beige, peach, lilac)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Textured linen fabric background</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Marble tabletop (white or gray veins)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Wooden desk (light oak tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Concrete surface (matte gray texture)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Gradient paper backdrop (white to pastel)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Natural sunlight with soft shadow play</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Fabric drape with aesthetic folds (neutral tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Minimalist cubes and podiums for product display</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Ceramic tile or bathroom setup (for skincare)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Glass or acrylic reflective base</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Layered paper sheets for flatlay aesthetic</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Neutral background with warm daylight tone</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Brand-colored monotone backdrop</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Wooden tray with morning sunlight shadows</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Café table setup with cozy morning light</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Bathroom shelf (for skincare or fragrance)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Kitchen countertop (for food or beverage)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Soft rug or textile background (neutral tone)</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Plant leaves shadow pattern on plain wall</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Minimal desk setup with neutral props</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Window sill with daylight reflection</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Cozy shelf scene with soft neutral props</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+    <div><textarea class="prompt-text" readonly rows="2">Neutral pastel wall with subtle decor elements</textarea><button class="copy-btn" onclick="copyText(this)">Copy</button></div>
+
+  </div>
+</div>
+
+<script>
+function copyText(btn) {
+  const text = btn.previousElementSibling.value;
+  navigator.clipboard.writeText(text);
+}
+</script>
+
+
+
+    </div>
+  </div>
+  <!-- External JavaScript file for interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
